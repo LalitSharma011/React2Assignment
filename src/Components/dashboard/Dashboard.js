@@ -46,10 +46,11 @@ export default function Dashboard() {
     {/* <Header/> */}
 
     <div data-testid="dashboardId" id="dataStore" name="dataStoreName" className="container">
-    
+    <div className="row">
         {
-        news.map((item) => <Card urlToImage={item.urlToImage} title={item.title} author={item.author} readLater={readLater} description={item.description} url={item.url}/>)
+        news.map((item) => <div className="col-12 col-md-8 col-lg-4"> <Card urlToImage={item.urlToImage} title={item.title} author={item.author} readLater={readLater} description={item.description} url={item.url}/></div>)
         }
+    </div>
     </div>
     </>
     )

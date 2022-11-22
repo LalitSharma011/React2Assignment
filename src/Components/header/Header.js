@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
 import './Header.css'
 
-
 export default function Header() {
   const username = JSON.parse(localStorage.getItem('userName'));
   // console.log(username)
@@ -22,8 +21,6 @@ export default function Header() {
     <div>
       <nav className="navbar navbar-expand-lg bg-primary fixed-top user-header">
         <div className="container-fluid">
-
-
           <Link className="navbar-brand" to="/registration">NatWest</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -69,10 +66,6 @@ export default function Header() {
             {/* <li className="nav-item user-logout-button">
                 <Link className="nav-link" onClick={logout}>Logout</Link>
               </li> */}
-
-
-
-
 
           </div>
         </div>
